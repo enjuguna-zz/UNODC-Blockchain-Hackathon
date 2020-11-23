@@ -1,0 +1,154 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Asili Procurement</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="styles/css/app.css" rel="stylesheet">
+	<script src="scripts/web3.js/web3.min.js"></script>
+	<script src="scripts/custom/qrcode.js"></script>
+
+	<script type="text/javascript">
+		var contract_address = "0x8F0e5dfbC5E294FeD3a5C3DB473a5344523ec239"
+		var contract_abi = [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "kill",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "whoIncreased",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "oldNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "NumberIsIncreased",
+				"type": "event"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "myNewNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "setMyNumber",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getCreator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getMyNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		];
+		if (typeof web3 !== 'undefined') {
+			web3 = new Web3(web3.currentProvider);
+		} else {
+			// set the provider you want from Web3.providers
+			console.log('not detected')
+			web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+		}
+
+		var contract_instance;
+		contract_instance = web3.eth.contract(contract_abi).at(contract_address);
+		console.log(contract_instance);
+	</script>
+</head>
+
+<body>
+	<!-- Main -->
+<div class="d-md-flex h-md-100 align-items-center">
+	<div class="col-md-6 p-0 bg-indigo h-md-100">
+		<div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+			<div class="logoarea pt-5 pb-5">
+				<p>
+					<i class="fa fa-anchor fa-3x"></i>
+				</p>
+				<h1 class="mb-0 mt-3 display-4">Asili Procurement System</h1>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+		<div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+			<form class="border rounded p-5">
+				<h3 class="mb-4 text-center">Welcome to Asili</h3>
+				<a href="./deployed.html" class="btn btn-primary btn-round btn-block shadow-sm">See Deployed Tenders</a>
+				<a href="./manager.html" class="btn btn-danger btn-round btn-block shadow-sm">Tender Manager</a>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End Main -->
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+<script src="scripts/custom/index.js"></script>
+<script src="scripts/jquery/jquery.min.js"></script>
+
+</html>
