@@ -15,7 +15,7 @@ Solution Application of Blockchain in procurement where there are certain applic
 ## Presentation Slides : [Click me](#) - Link to Be added
 
 
-Us as the Developes shall implement end-to-end process for Procurement and supply chain, which contains steps such as: 
+Us as the Developers shall implement end-to-end process for Procurement and supply chain, which contains steps such as: 
 
 A) Procurement from a vendor </br>
 B) Shipping of Items </br>
