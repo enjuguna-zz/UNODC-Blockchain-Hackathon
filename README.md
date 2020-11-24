@@ -12,10 +12,13 @@ Solution Application of Blockchain in procurement where there are certain applic
 5. Ledger trust - Multiple levels of verification and ensuring that the customers and suppliers are on the same page. 
 6. Financial tracking- All payments are made through the system.
 
+## Presentation Slides : [Click me](#) - Link to Be added
+
+
 Us as the Developes shall implement end-to-end process for Procurement and supply chain, which contains steps such as: 
 
-A)procurement from a vendor </br>
-B)Shipping of Items </br>
+A) Procurement from a vendor </br>
+B) Shipping of Items </br>
 C) Transportation of items along the supply chain </br>
 D) Accceptance at the store  </br>
 E) Paying vendors via Smart contracts  </br>
@@ -24,9 +27,7 @@ For out implementation we shall be using open source technologies such as web3, 
 
 
 ## Demo/Explanatory Video: [Click me](#) - Link to Be added
- </br>
-  </br>
-## Presentation Slides : [Click me](#) - Link to Be added
+
 
 
 ## Location Description
