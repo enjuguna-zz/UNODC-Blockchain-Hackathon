@@ -14,16 +14,18 @@ Solution Application of Blockchain in procurement where there are certain applic
 
 Us as the Developes shall implement end-to-end process for Procurement and supply chain, which contains steps such as: 
 
-A)procurement from a vendor 
-B)Shipping of Items 
-C) Transportation of items along the supply chain 
-D) Accceptance at the store 
-E) Paying vendors via Smart contracts 
+A)procurement from a vendor </br>
+B)Shipping of Items </br>
+C) Transportation of items along the supply chain </br>
+D) Accceptance at the store  </br>
+E) Paying vendors via Smart contracts  </br>
 
 For out implementation we shall be using open source technologies such as web3, remix for deploying smart contracts on the Ropsten test network
 
 
 ## Demo/Explanatory Video: [Click me](#) - Link to Be added
+ </br>
+  </br>
 ## Presentation Slides : [Click me](#) - Link to Be added
 
 
