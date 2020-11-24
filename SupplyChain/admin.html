@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GAIL</title>
+    <title>Admin Privileges</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -537,18 +537,17 @@
 
   <body>
     <div class="home">
-      <div class="topbar">
-        ADMIN
-      </div>
+      <h2 style="text-align: center;">Admin Privileges</h2>
+      <a href="./index.html" class="btn btn-danger">Back to Home</a>
       <div class="content">
         <div class="btn-wrapper">
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-success"
             data-toggle="modal"
             data-target="#tenderModal"
           >
-            Allot Tender
+            Award a Tender
           </button>
         </div>
         <div class="btn-wrapper">
@@ -558,17 +557,17 @@
             data-toggle="modal"
             data-target="#intermediaryModal"
           >
-            Add Intermediary
+            Add an Intermediary
           </button>
         </div>
         <div class="btn-wrapper">
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-success"
             data-toggle="modal"
             data-target="#balanceModal"
           >
-            Get Balance
+            Get the Balance
           </button>
         </div>
         <div class="btn-wrapper">
@@ -578,17 +577,17 @@
             data-toggle="modal"
             data-target="#destroyModal"
           >
-            Destroy
+            Destroy a smart Contract
           </button>
         </div>
         <div class="btn-wrapper">
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-success"
             data-toggle="modal"
             data-target="#addUsers"
           >
-            Add Users
+            Add New Users
           </button>
         </div>
       </div>
@@ -604,7 +603,7 @@
           <div class="modal-content">
             <div id="tender-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">INPUTS</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Award a Tender</h5>
                 <button
                   type="button"
                   class="close"
@@ -660,14 +659,14 @@
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="btn btn-danger"
                   data-dismiss="modal"
                 >
                   Close
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary submit"
+                  class="btn btn-success submit"
                   id="submit-allot"
                   onclick="Allot()"
                 >
@@ -696,7 +695,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                ADD INTERMIDIARY
+                Add and Intermediary
               </h5>
               <button
                 type="button"
@@ -722,7 +721,7 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-dismiss="modal"
               >
                 Close
@@ -730,7 +729,7 @@
               <button
                 type="button"
                 id="submit-addholder"
-                class="btn btn-primary submit"
+                class="btn btn-success submit"
                 onclick="AddHolder()"
               >
                 Submit
@@ -750,7 +749,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">BALANCE</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Balance</h5>
               <button
                 type="button"
                 class="close"
@@ -761,19 +760,19 @@
               </button>
             </div>
             <div class="modal-body">
-              Your Balance is (In Wei) : <span id="balance"></span>
+              Your Balance is (In KSH. ) : <span id="balance"></span>
             </div>
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-dismiss="modal"
               >
                 Close
               </button>
               <button
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-success"
                 onclick="getBalance()"
               >
                 Submit
@@ -793,7 +792,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">DESTROY</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Destroy a Smart Contract</h5>
               <button
                 type="button"
                 class="close"
@@ -816,22 +815,20 @@
               </div>
             </div>
             <div class="modal-body">
-              Once destroyed, All functionalities of smart contract will be
+              All functionalities of smart contract will be
               destroyed, but previous mined blocks are not erased.
               <br />
-              Use this only when security of smart contract is compromised. All
-              funds remaining in the contract account will be transferred to
-              account aboves.
+              Use this only when security of smart contract is compromised.
             </div>
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary" onclick="destroy()">
+              <button type="button" class="btn btn-success" onclick="destroy()">
                 Submit
               </button>
             </div>
@@ -851,7 +848,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                ADD USERS
+                Add a new User
               </h5>
               <button
                 type="button"
@@ -887,7 +884,7 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-dismiss="modal"
               >
                 Close
@@ -895,7 +892,7 @@
               <button
                 type="button"
                 id="submit-addholder"
-                class="btn btn-primary submit"
+                class="btn btn-success submit"
                 data-dismiss="modal"
                 onclick="addActors()"
               >

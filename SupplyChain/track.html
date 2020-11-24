@@ -2,7 +2,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAIL</title>
+  <title>Track Product</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -430,12 +430,11 @@
 
 <body>
   <div class="update">
-    <div class="topbar">
-        Track
-    </div>
+	<h2 style="text-align: center;">Track a Product</h2>
+	<a href="./index.html" class="btn btn-danger">Back to Home</a>
     <div class="content">
-      <input id="itemid" type=text size=16 placeholder="Item Id" class=item-id><br><br>
-      <button type='button' class="btn btn-primary"  data-toggle="modal"
+      <input id="itemid" type=text size=16  placeholder="Enter item ID" class=item-id><br><br>
+      <button type='button' class="btn btn-success "  data-toggle="modal"
 	  data-target="#trackModal" onclick="getPresentStatus()">SUBMIT</button>
 	</div>
 
