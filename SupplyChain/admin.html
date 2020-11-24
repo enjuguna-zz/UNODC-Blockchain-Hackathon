@@ -31,231 +31,63 @@
     <script type="text/javascript" src="./email/index.js"></script>
 
     <script type="text/javascript">
-      var contract_address = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
+      var contract_address = "0x184eF0B83d3CFDa5a859839f4d27a2BF01049029";
       var contract_abi = [
-	{
+        {
+
+      "constant": true,
 		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "History",
+		"name": "getBalance",
 		"outputs": [
 			{
-				"internalType": "address",
-				"name": "holder",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestampArrived",
+				"name": "",
 				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestampShipped",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "nextStop",
-				"type": "address"
-			},
-			{
-				"internalType": "address payable",
-				"name": "vendor",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "quotation",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bool",
-				"name": "Status",
-				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "PresentConditionOfItem",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "holder",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestampArrived",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "timestampShipped",
-				"type": "uint256"
-			},
-			{
-				"internalType": "address",
-				"name": "nextStop",
-				"type": "address"
-			},
-			{
-				"internalType": "address payable",
-				"name": "vendor",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "quotation",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bool",
-				"name": "Status",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_newholder",
-				"type": "address"
-			}
-		],
-		"name": "addHolder",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
 				"name": "_itemid",
 				"type": "uint256"
 			},
 			{
-				"internalType": "address payable",
 				"name": "_vendor",
 				"type": "address"
 			},
 			{
-				"internalType": "uint256",
 				"name": "_quotation",
 				"type": "uint256"
 			}
 		],
 		"name": "allotItemToVendor",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
-				"internalType": "address payable",
 				"name": "_to",
 				"type": "address"
 			}
 		],
 		"name": "destroySmartContract",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "getBalance",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
+		"constant": true,
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_itemid",
-				"type": "uint256"
-			}
-		],
-		"name": "getHistory",
-		"outputs": [
-			{
-				"internalType": "address[]",
-				"name": "",
-				"type": "address[]"
-			},
-			{
-				"internalType": "uint256[]",
-				"name": "",
-				"type": "uint256[]"
-			},
-			{
-				"internalType": "uint256[]",
-				"name": "",
-				"type": "uint256[]"
-			},
-			{
-				"internalType": "address[]",
-				"name": "",
-				"type": "address[]"
-			},
-			{
-				"internalType": "address",
-				"name": "payble",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			},
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
 				"name": "_itemid",
 				"type": "uint256"
 			}
@@ -263,67 +95,42 @@
 		"name": "getPresentStatus",
 		"outputs": [
 			{
-				"internalType": "address",
 				"name": "_holder",
 				"type": "address"
 			},
 			{
-				"internalType": "uint256",
 				"name": "_timestampArrived",
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
 				"name": "_timestampShipped",
 				"type": "uint256"
 			},
 			{
-				"internalType": "address",
 				"name": "_nextStop",
 				"type": "address"
 			},
 			{
-				"internalType": "address payable",
 				"name": "_vendor",
 				"type": "address"
 			},
 			{
-				"internalType": "uint256",
 				"name": "_quotation",
 				"type": "uint256"
 			},
 			{
-				"internalType": "bool",
 				"name": "_status",
 				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "listedItems",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
 				"name": "",
 				"type": "address"
 			}
@@ -331,59 +138,231 @@
 		"name": "listedholders",
 		"outputs": [
 			{
-				"internalType": "bool",
 				"name": "",
 				"type": "bool"
 			}
 		],
+		"payable": false,
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": true,
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "_itemid",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "PresentConditionOfItem",
+		"outputs": [
+			{
+				"name": "holder",
+				"type": "address"
+			},
+			{
+				"name": "timestampArrived",
 				"type": "uint256"
 			},
 			{
-				"internalType": "address",
-				"name": "_nextStop",
+				"name": "timestampShipped",
+				"type": "uint256"
+			},
+			{
+				"name": "nextStop",
 				"type": "address"
+			},
+			{
+				"name": "vendor",
+				"type": "address"
+			},
+			{
+				"name": "quotation",
+				"type": "uint256"
+			},
+			{
+				"name": "Status",
+				"type": "bool"
 			}
 		],
-		"name": "shipNext",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
+		"constant": false,
 		"inputs": [
 			{
-				"internalType": "uint256",
 				"name": "_itemid",
 				"type": "uint256"
 			}
 		],
 		"name": "updateStateOfArrivedItem",
 		"outputs": [],
+		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newholder",
+				"type": "address"
+			}
+		],
+		"name": "addHolder",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "History",
+		"outputs": [
+			{
+				"name": "holder",
+				"type": "address"
+			},
+			{
+				"name": "timestampArrived",
+				"type": "uint256"
+			},
+			{
+				"name": "timestampShipped",
+				"type": "uint256"
+			},
+			{
+				"name": "nextStop",
+				"type": "address"
+			},
+			{
+				"name": "vendor",
+				"type": "address"
+			},
+			{
+				"name": "quotation",
+				"type": "uint256"
+			},
+			{
+				"name": "Status",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_itemid",
+				"type": "uint256"
+			}
+		],
+		"name": "getHistory",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "address[]"
+			},
+			{
+				"name": "payble",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "listedItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_itemid",
+				"type": "uint256"
+			},
+			{
+				"name": "_nextStop",
+				"type": "address"
+			}
+		],
+		"name": "shipNext",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
 		"stateMutability": "payable",
-		"type": "receive"
+		"type": "fallback"
 	}
+    
 ];
 
       if (typeof web3 !== "undefined") {
         web3 = new Web3(web3.currentProvider);
-      } else {
-        // set the provider you want from Web3.providers
-        console.log("not detected");
-        web3 = new Web3(
-          new Web3.providers.HttpProvider("http://localhost:7545")
-        );
+      } 
+      else {
+        console.log("metamask fail");
       }
 
       var contract_instance;
@@ -409,9 +388,9 @@
         console.log(_quotation);
         console.log(_email);
 
-        // console.log(web3.eth.accounts[0]);
-        // web3.eth.defaultAccount=web3.eth.accounts[0]
-        web3.setProvider(new web3.providers.HttpProvider('http://localhost:7545'));
+        console.log(web3.eth.accounts[0]);
+        web3.eth.defaultAccount=web3.eth.accounts[0]
+        // web3.setProvider(new web3.providers.HttpProvider('http://localhost:7545'));
 
 
 
