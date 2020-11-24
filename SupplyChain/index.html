@@ -2,7 +2,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAIL</title>
+  <title>Supply Chain</title>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
@@ -408,201 +408,89 @@
 				<p>
 					<i class="fa fa-anchor fa-3x"></i>
 				</p>
-				<h1 class="mb-0 mt-3 display-4">Asili Procurement System</h1>
+				<h1 class="mb-0 mt-3 display-4">Asili Supply Chain</h1>
 			</div>
 		</div>
 	</div>
 	<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
 		<div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
 			<form class="border rounded p-5">
-				<h3 class="mb-4 text-center">Welcome to Asili</h3>
-				<a href="./deployed.html" class="btn btn-primary btn-round btn-block shadow-sm">See Deployed Tenders</a>
-				<a href="./manager.html" class="btn btn-danger btn-round btn-block shadow-sm">Tender Manager</a>
+        <h3 class="mb-4 text-center">Welcome to Asili Supply Chain</h3>
+        <button class="btn btn-primary btn-round btn-block shadow-sm" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Public Access
+                    </button>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <a href="/track.html" data-toggle="tooltip" title="User can track an item on blockchain">Track an Item</a>
+                        <hr style="margin:0.5rem 0" />
+                        <a href="/record.html" data-toggle="tooltip" title="User can view a particular record from blockchain">Get
+                          Records</a>
+                      </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-danger btn-round btn-block shadow-sm" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Vendor
+                  </button>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <a href="/track.html" data-toggle="tooltip" title="Vendor can track an item on blockchain">Track an Item</a>
+                      <hr style="margin:0.5rem 0" />
+                      <a href="/record.html" data-toggle="tooltip" title="Vendor can view a particular record from blockchain">Get
+                        Records</a>
+                      <hr style="margin:0.5rem 0" />
+                      <a href="/ship.html" data-toggle="tooltip"
+                        title="Vendor can add shipping details of an item on blockchain.">Choose Next Destination</a>
+  
+                    </div>
+                  </div>
+                  <br>
+                  <button class="btn btn-primary btn-round btn-block shadow-sm" type="button" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Intermediary
+                    </button>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <a href="/track.html" data-toggle="tooltip" title="Vendor can track an item on blockchain">Track an Item</a>
+                        <hr style="margin:0.5rem 0" />
+                        <a href="/record.html" data-toggle="tooltip" title="Vendor can view a particular record from blockchain">Get
+                          Records</a>
+                        <hr style="margin:0.5rem 0" />
+                        <a href="/ship.html" data-toggle="tooltip"
+                          title="Vendor can add shipping details of an item on blockchain.">Choose Next Destination</a>
+                          <hr style="margin:0.5rem 0" />
+                          <a href="/update.html" data-toggle="tooltip"
+                            title="A Procurement manager can update the state of an item on blockchain">Update State of Product</a>
+    
+                      </div>
+                    </div>
+                    <br>
+                    <button class="btn btn btn-danger btn-round btn-block shadow-sm" type="button" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Manager
+                  </button>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <a href="/track.html" data-toggle="tooltip" title="A Procurement Manager can track an item on blockchain">Track
+                        an Item</a>
+                      <hr style="margin:0.5rem 0" />
+                      <a href="/record.html" data-toggle="tooltip"
+                        title="Procurement Manager can view a particular record from blockchain">Get
+                        Record</a>
+                      <hr style="margin:0.5rem 0" />
+                      <a href="/update.html" data-toggle="tooltip"
+                        title="Procurement Manager can update the state of an item on blockchain">Update State</a>
+                      <hr style="margin:0.5rem 0" />
+                      <a href="/admin.html" data-toggle="tooltip"
+                        title="Procurement Manager can query the balance">Restricted To Admin</a>
+                    </div>
+                  </div>
+                  </div>
 			</form>
 		</div>
 	</div>
 </div>
-<!-- End Main -->
-  <div class="home">
-    <div class="topbar">
-      <div class="logo">
-        <img src="C:\Users\snovi\Desktop\v1\imgs\GailLogo.png" alt="">GAIL SUPPLY CHAIN
-      </div>
-    </div>
-    <!-- <div class="hm-gradient">
-      <nav class="mb-4 navbar navbar-expand-lg navbar-light pink lighten-4">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link font-bold" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-bold" href="update.html">Update</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-bold" href="ship.html">Ship</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-bold" href="track.html">Track</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-bold" href="record.html">Record</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-bold" href="admin.html">Admin</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div> -->
-
-    <div class="content">
-      <!-- <div class="btn-wrapper">
-          <button id="update" type="button" class="btn btn-primary">
-            UPDATE
-          </button>
-        </div>
-        <div class="btn-wrapper">
-          <button id="ship" type="button" class="btn btn-primary">
-            SHIP
-          </button>
-        </div>
-        <div class="btn-wrapper">
-          <button id="track" type="button" class="btn btn-primary">
-            TRACK
-          </button>
-        </div>
-        <div class="btn-wrapper">
-          <button id="record" type="button" class="btn btn-primary">
-            RECORD
-          </button>
-        </div>
-        <div class="btn-wrapper">
-          <button id="admin" type="button" class="btn btn-primary">
-            ADMIN
-          </button>
-        </div> -->
-      <p><h3 class="display-5">WELCOME</h3></p>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-12"></div>
-          <div class="col-md-6 col-sm-12">
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      PUBLIC
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <a href="/track.html" data-toggle="tooltip" title="User can track an item on blockchain">Track Item</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/record.html" data-toggle="tooltip" title="User can view a particular record from blockchain">Get
-                      Record</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      VENDOR
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <a href="/track.html" data-toggle="tooltip" title="Vendor can track an item on blockchain">Track Item</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/record.html" data-toggle="tooltip" title="Vendor can view a particular record from blockchain">Get
-                      Record</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/ship.html" data-toggle="tooltip"
-                      title="Vendor can add shipping details of an item on blockchain.">Ship Next</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      INTERMIDIARY
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <a href="/track.html" data-toggle="tooltip" title="Vendor can track an item on blockchain">Track Item</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/record.html" data-toggle="tooltip" title="Vendor can view a particular record from blockchain">Get
-                      Record</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/ship.html" data-toggle="tooltip"
-                      title="Vendor can add shipping details of an item on blockchain.">Ship Next</a>
-                      <hr style="margin:0.5rem 0" />
-                      <a href="/update.html" data-toggle="tooltip"
-                        title="GAIL Manager can update the state of an item on blockchain">Update State</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour"
-                      aria-expanded="true" aria-controls="collapseOne">
-                      MANAGER
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <a href="/track.html" data-toggle="tooltip" title="GAIL Manager can track an item on blockchain">Track
-                      Item</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/record.html" data-toggle="tooltip"
-                      title="GAIL Manager can view a particular record from blockchain">Get
-                      Record</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/update.html" data-toggle="tooltip"
-                      title="GAIL Manager can update the state of an item on blockchain">Update State</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="/admin.html" data-toggle="tooltip"
-                      title="GAIL Manager can query the balance">Restricted To Admin</a>
-                    <!-- <hr style="margin:0.5rem 0" />
-                    <a href="#" data-toggle="tooltip"
-                      title="GAIL Manager can add Intermediary in the proccess">Add Intermediary</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="#" data-toggle="tooltip"
-                      title="GAIL Manager can allot tender to a party">Allot Tender</a>
-                    <hr style="margin:0.5rem 0" />
-                    <a href="#" data-toggle="tooltip"
-                      title="GAIL Manager can destroy a contract">Destroy</a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
