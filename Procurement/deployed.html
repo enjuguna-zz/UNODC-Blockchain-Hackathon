@@ -437,22 +437,43 @@
 	var person = { addr: "0x8F0e5dfbC5E294FeD3a5C3DB473a5344523ec239", status: true };
 	var tenders = [];
 	var descp = [];
-	fcontract_instance.getDescription(0, function (error, result) {
-				if (error) {
-					console.log("sd");
-					console.error(error);
-				}
-				else {
-					console.log(result, "answer");
+	var m = 1;
+	
+	for (var t = 0; t < m; t++){
+		fcontract_instance.getDescription(t, function (error, result) {
+			if (error) {
+				console.log("sd");
+				console.error(error);
+			}
+			else {
+				console.log(result, "answer");
 					
-					descp.push(result);
+				descp.push(result);
 					
 					
 					
-				}
+			}
 
-				populateTable();
-			})
+			populateTable();
+		})
+	}
+	/*fcontract_instance.getDescription(i, function (error, result) {
+			if (error) {
+				console.log("sd");
+				console.error(error);
+			}
+			else {
+				console.log(result, "answer");
+					
+				descp.push(result);
+					
+					
+					
+			}
+
+			populateTable();
+	})*/
+	
 	fcontract_instance.getDeployedTenders(function (error, result) {
 	
 
@@ -506,7 +527,7 @@
 		console.log(descp[0]);
 		for (var i = 0; i < tenders.length; i++) {
 			
-			tendersBody.innerHTML += tenders[i].status ? "<tr data-toggle='modal' data-target='#tenderModal' onclick='tenderClicked(" + i.toString() + ")'><td>" + (i + 1).toString() + "</td><td>" + tenders[i].addr + "</td><td>" + descp[0] + "</td><td><i style='font-weight:500; font-size:22px;' class='fas fa-check-circle fa-5x'></i></td></tr>" : "<tr data-toggle='modal' data-target='#tenderModal' onclick='tenderClicked(" + i.toString() + ")'><td>" + (i + 1).toString() + "</td><td>" + tenders[i].addr + "</td><td>" + tenders[i].descp + "</td><td><i style='font-weight:500; font-size:22px;' class='fas fa-times-circle fa-5x'></i></td></tr>";
+			tendersBody.innerHTML += tenders[i].status ? "<tr data-toggle='modal' data-target='#tenderModal' onclick='tenderClicked(" + i.toString() + ")'><td>" + (i + 1).toString() + "</td><td>" + tenders[i].addr + "</td><td>" + descp[i] + "</td><td><i style='font-weight:500; font-size:22px;' class='fas fa-check-circle fa-5x'></i></td></tr>" : "<tr data-toggle='modal' data-target='#tenderModal' onclick='tenderClicked(" + i.toString() + ")'><td>" + (i + 1).toString() + "</td><td>" + tenders[i].addr + "</td><td>" + descp[i] + "</td><td><i style='font-weight:500; font-size:22px;' class='fas fa-times-circle fa-5x'></i></td></tr>";
 		}
 	}
 	function tenderClicked(i) {
