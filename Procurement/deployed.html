@@ -369,7 +369,7 @@
 						</div>
 						<div class="modal-body">
 							<div class="input-group mb-3">
-								<input id="bidAmount" type="text" class="form-control" placeholder="Bid amount in Ksh."
+								<input id="bidAmount" type="text" class="form-control" placeholder="Bid amount:"
 									aria-label="Item ID" aria-describedby="basic-addon1">
 							</div>
 							<div class="input-group mb-3">
@@ -414,8 +414,8 @@
 				tenders.push(p)
 			});
 			console.log(tenders)
-			var descpt = ['Petrol','Steel pipe','Gasoline','Crude oil','Diesel', 'Natural Gas', 'Aluminium Pipe'];
-			for(var j=0;j<7;j++) {
+			var descpt = ['Stationery','Cement','Vaccum Cleaners','Furniture','Food', 'Rental Cars', 'Consumables', 'Products', 'Cleaning Items', 'Metal Bars'];
+			for(var j=0;j<10;j++) {
 				tenders[j].descp = descpt[j];
 			}
 			console.log(tenders)
