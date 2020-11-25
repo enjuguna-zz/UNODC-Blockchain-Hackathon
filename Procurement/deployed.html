@@ -437,7 +437,8 @@
 	var person = { addr: "0x8F0e5dfbC5E294FeD3a5C3DB473a5344523ec239", status: true };
 	var tenders = [];
 	var descp = [];
-	var m = 1;
+	const m = 1;
+	
 	
 	for (var t = 0; t < m; t++){
 		fcontract_instance.getDescription(t, function (error, result) {
