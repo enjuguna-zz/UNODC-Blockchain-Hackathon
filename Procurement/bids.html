@@ -10,54 +10,92 @@
 	<script src="scripts/web3.js/web3.min.js"></script>
 
 	<script type="text/javascript">
-		var fcontract_address = "0x350Ed05eE716870D60A814f5Fe1ebD1a3B3Cf70c";
+		var fcontract_address = "0x82e7f7594075bf32bd10e03c0d1241d052fba850";
 		var fcontract_abi = [
 			{
-				constant: false,
-				inputs: [
+				"constant": false,
+				"inputs": [
 					{
-						name: "description",
-						type: "string"
+						"name": "description",
+						"type": "string"
 					}
 				],
-				name: "createTender",
-				outputs: [],
-				payable: false,
-				stateMutability: "nonpayable",
-				type: "function"
+				"name": "createTender",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
-				constant: true,
-				inputs: [
+				"constant": true,
+				"inputs": [
 					{
-						name: "",
-						type: "uint256"
+						"name": "key",
+						"type": "uint256"
 					}
 				],
-				name: "deployedTenders",
-				outputs: [
+				"name": "getDescription",
+				"outputs": [
 					{
-						name: "",
-						type: "address"
+						"name": "",
+						"type": "string"
 					}
 				],
-				payable: false,
-				stateMutability: "view",
-				type: "function"
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
-				constant: true,
-				inputs: [],
-				name: "getDeployedTenders",
-				outputs: [
+				"constant": true,
+				"inputs": [],
+				"name": "getDeployedTenders",
+				"outputs": [
 					{
-						name: "",
-						type: "address[]"
+						"name": "",
+						"type": "address[]"
 					}
 				],
-				payable: false,
-				stateMutability: "view",
-				type: "function"
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "deployedTenders",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "data",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
 			}
 		];
 
