@@ -1,5 +1,6 @@
-## Asili Procurement & Supply Chain System
+# Asili Procurement & Supply Chain System (UNODC Hackathon 2020)
 ![Asili Logo](https://github.com/enjuguna/Blockchain-procurement-DAPP/blob/master/Asili.png?raw=true)
+
 ### This project is built as a solution to the 2020 UNODC Virtual Blockchain Hackathon
 ## The Problem Statement
 In our country today the biggest problem in our economy is corruption which has questioned the reputation of our country and its citizens.
