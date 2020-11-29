@@ -27,7 +27,7 @@ E) Paying vendors via Smart contracts  </br>
 For out implementation we shall be using open source technologies such as web3, remix for deploying smart contracts on the Ropsten test network
 
 
-## Demo/Explanatory Video: [Click me](#) - Link to Be added
+## Demo/Explanatory Video: [Here](https://youtu.be/gW_-CeEb3kc)
 
 
 
